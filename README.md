@@ -35,5 +35,4 @@ Lekki panel www (Flask) do monitorowania TERA Classic: zlicza graczy online, mie
 - Docker Compose: `docker-compose up --build`
 
 ## Dodatkowe notatki
-- Repo odchudzone (brak venv/node_modules, duze pliki usuniete).
 - W katalogu `data/` znajduja sie przykladowe dane; w produkcji mozesz podpiac wlasny wolumen, aby zachowac baze i konfiguracje.
