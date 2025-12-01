@@ -1,0 +1,10 @@
+/* --- Prediction card --- */
+.pred-card { border: 1px solid #2b2f36; border-radius: .75rem; padding: .9rem; background: rgba(255,255,255,0.02); box-shadow: 0 2px 8px rgba(0,0,0,.15); }
+.pred-head { display:flex; align-items:center; justify-content:space-between; gap:.75rem; flex-wrap:wrap; }
+.pred-head h3 { margin:0; font-size:1.05rem; font-weight:600; }
+.pred-actions { display:flex; align-items:center; gap:.5rem; }
+.pred-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:.65rem; margin-top:.65rem; }
+.pred-kpi { font-size:1.05rem; border: 1px solid #2b2f36; border-radius:.5rem; padding:.5rem .65rem; background: rgba(255,255,255,0.03); }
+.small-muted { color:#a7a7a7; font-size:.9rem; }
+.btn { padding:.38rem .8rem; border:1px solid #3a3f46; border-radius:.5rem; background:#2b3037; cursor:pointer; }
+.btn:hover { filter:brightness(1.05); }

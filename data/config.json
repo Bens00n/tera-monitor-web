@@ -1,0 +1,7 @@
+{
+  "mute_enabled": false,
+  "quiet_start": "01:00",
+  "quiet_end": "06:00",
+  "ping_alert_ms": "300",
+  "glitch_seconds": "15"
+}

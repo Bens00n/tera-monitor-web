@@ -1,0 +1,19 @@
+<link rel=\"stylesheet\" href=\"{{ url_for('static', filename='prediction.css') }}\">
+<hr>
+<div class=\"pred-card\">
+  <div class=\"pred-head\">
+    <h3>Prognoza online (ostatnie 4h)</h3>
+    <div class=\"pred-actions\">
+      <button id=\"pred-refresh\" class=\"btn\">Odśwież</button>
+      <span class=\"small-muted\" id=\"pred-updated\"></span>
+    </div>
+  </div>
+  <div class=\"pred-grid\">
+    <div class=\"pred-kpi\"><div class=\"small-muted\">Status teraz</div><div id=\"pred-now\">—</div></div>
+    <div class=\"pred-kpi\"><div class=\"small-muted\">Bieżący czas online</div><div id=\"pred-current\">—</div></div>
+    <div class=\"pred-kpi\"><div class=\"small-muted\">Mediana runu online</div><div id=\"pred-median\">—</div></div>
+    <div class=\"pred-kpi\"><div class=\"small-muted\">Średni run online</div><div id=\"pred-mean\">—</div></div>
+    <div class=\"pred-kpi\"><div class=\"small-muted\">Prognoza: jeszcze</div><div id=\"pred-remaining\">—</div></div>
+  </div>
+</div>
+<script src=\"{{ url_for('static', filename='prediction.js') }}\"></script>

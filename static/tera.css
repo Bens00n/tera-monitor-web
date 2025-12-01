@@ -1,0 +1,90 @@
+:root{
+  --tera-bg: #1e242a;
+  --tera-bg-2: #1a2026;
+  --tera-panel: #20262d;
+  --tera-panel-2:#1b2128;
+  --tera-text: #dce7f3;
+  --tera-muted:#9eb3c9;
+
+  --tera-cyan:#43b0ff;
+  --tera-cyan-2:#2a95e5;
+  --tera-cyan-3:#0e78c9;
+  --tera-gold:#ffcc66;
+  --tera-red:#ff5959;
+  --tera-green:#5df28c;
+
+  --radius: 12px;
+  --shadow: 0 0 0 1px rgba(67,176,255,.28), 0 12px 28px rgba(0,0,0,.35), inset 0 0 24px rgba(67,176,255,.06);
+}
+body.tera {
+  color: var(--tera-text);
+  background:
+    radial-gradient(1200px 600px at 40% -10%, rgba(67,176,255,.08), rgba(0,0,0,0) 60%),
+    linear-gradient(180deg, var(--tera-bg) 0%, var(--tera-bg-2) 100%);
+  min-height:100vh;
+}
+.navbar.tera {
+  background: linear-gradient(180deg, #2b3642, #222b34);
+  border-bottom: 1px solid rgba(67,176,255,.28);
+  box-shadow: 0 8px 24px rgba(0,0,0,.35), inset 0 -1px 0 rgba(255,255,255,.04);
+}
+.tera-window{
+  background: linear-gradient(180deg, var(--tera-panel) 0%, var(--tera-panel-2) 100%);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(67,176,255,.28);
+  position: relative;
+  overflow: hidden;
+}
+.tera-window .tera-header{
+  font-weight:600; letter-spacing:.3px;
+  padding:.6rem .9rem;
+  background: linear-gradient(180deg, rgba(67,176,255,.15), rgba(67,176,255,0));
+  border-bottom: 1px solid rgba(67,176,255,.25);
+}
+.tera-body{ padding: .9rem 1rem; }
+
+.btn-tera{
+  color:#e9f4ff; font-weight:600;
+  border-radius:8px;
+  padding:.45rem .8rem;
+  background: linear-gradient(180deg, var(--tera-cyan) 0%, var(--tera-cyan-2) 100%);
+  border:1px solid var(--tera-cyan-3);
+  box-shadow: 0 0 0 1px rgba(255,255,255,.06) inset, 0 6px 14px rgba(67,176,255,.25);
+}
+.btn-tera:hover{
+  filter: brightness(1.06);
+  box-shadow: 0 0 0 1px rgba(255,255,255,.12) inset, 0 8px 18px rgba(67,176,255,.35);
+}
+.btn-ghost{
+  color: var(--tera-text);
+  background: linear-gradient(180deg, #2e3944, #232c35);
+  border:1px solid rgba(67,176,255,.25);
+  border-radius:8px;
+  padding:.4rem .7rem;
+}
+.btn-ghost:hover{ filter:brightness(1.05); }
+
+.badge-tera{
+  background: linear-gradient(180deg, #3cc3ff, #0ea5e9);
+  color:#052540; font-weight:700;
+  border:1px solid rgba(255,255,255,.25);
+  box-shadow: 0 0 0 1px rgba(67,176,255,.35), 0 6px 14px rgba(0,0,0,.4);
+  border-radius:999px;
+  padding:.3rem .55rem;
+}
+.spark-wrap{ display:inline-flex; flex-direction:column; align-items:center; }
+.spark{
+  width:200px; height:58px; object-fit:contain;
+  background: linear-gradient(180deg, #1e242a, #171c22);
+  border:1px solid rgba(67,176,255,.28);
+  border-radius:8px;
+  box-shadow: inset 0 0 16px rgba(67,176,255,.05), 0 8px 20px rgba(0,0,0,.35);
+  padding:3px 6px;
+}
+.sparkcap{ font-size:.8rem; color:#9eb3c9; margin-top:.3rem; }
+.status-online{ color: var(--tera-green); }
+.status-offline{ color: var(--tera-red); }
+.status-warn{ color: var(--tera-gold); }
+.small-muted{ color:#9eb3c9; }
+hr{ border-color: rgba(67,176,255,.25); }

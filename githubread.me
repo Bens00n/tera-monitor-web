@@ -1,0 +1,26 @@
+# Projekty lokalne › GitHub (konto Bens00n)
+
+Ten katalog zawiera lokalne projekty. Kazdy z nich mozesz polaczyc z GitHubem (konto: `Bens00n`).
+
+## Szybki start (nowe repo)
+1. `git init`
+2. `git add . && git commit -m "Initial commit"`
+3. `git remote add origin https://github.com/Bens00n/<nazwa-repo>.git`
+4. `git branch -M main`
+5. `git push -u origin main`
+
+## Sprawdzenie polaczenia
+- `git remote -v` — zweryfikuj URL.
+- `git status` — upewnij sie, ze nie ma niecommitowanych zmian przed push.
+
+## Konfiguracja autora (jesli potrzebna)
+```
+git config --global user.name "Bens00n"
+git config --global user.email "github@users.noreply.github.com"
+```
+
+## Uwagi
+- Do push wymagany jest token PAT (HTTPS). Przy pierwszym push wpisz login i PAT jako haslo.
+- Nie wrzucaj ciezkich plikow/binarek/venv; dodaj je do `.gitignore` lub uzyj Git LFS.
+- Przy istniejacym repo (np. `subtitle-sync-whisper`) aktualizuj: `git add ...`, `git commit -m "..."`, `git push`.
+

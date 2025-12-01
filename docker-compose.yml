@@ -1,0 +1,13 @@
+services:
+  tera-monitor-web:
+    image: tera-monitor-web:latest
+    build:
+      context: ./
+    container_name: tera-monitor-web
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "9999:9999"
+    volumes:
+      - ./:/app
